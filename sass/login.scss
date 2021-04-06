@@ -1,0 +1,175 @@
+// variables:
+
+// --color:
+$white: #fff;
+$light-color: rgba(241, 191, 136, 1);
+$light-color2: rgba(241, 191, 136, 0.6);
+$dark-color: rgba(57, 56, 72, 1);
+$dark-color2: rgba(57, 56, 72, 0.4);
+$dark-color3: rgba(57, 56, 72, 0.2);
+
+// --Fonts: 
+$title-font: El Messiri;
+$txt-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+// --Font_Size:
+$category-size: 25px;
+$title-size: 17px;
+$txt-size: 12px;
+$price-size: 15px;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    //border: 1px solid black;
+}
+
+.navbar {
+    background: linear-gradient(180deg, $light-color 65%, $dark-color 60%);
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 3fr 2fr;
+    gap: 10px 0px;
+    font-family: $txt-font;
+}
+.num { 
+      grid-area: 1 / 1 / 2 / 2; 
+      display: flex;
+}
+
+.INnum{
+    position: relative;
+    left : 35%;
+    top: 5px;
+    height:50%;
+    margin-right: 20px;
+    color: $white;
+}
+
+.media_lang { 
+      grid-area: 1 / 3 / 2 / 4;
+      display: flex;
+}
+
+.media{
+          display:flex;
+          justify-content: space-evenly;
+}
+
+.lang{
+    background-color: $dark-color;
+}
+
+.INmedia_lang{
+    position: relative;
+    left: 10%;
+    top: 5px;
+    height:35%;
+    width: 150px;
+    color: $white;
+    border-radius: 50px;
+}
+
+.buttons { 
+      grid-area: 2 / 1 / 3 / 2;
+      display: flex;
+      list-style-type:unset;
+}
+
+.INbuttons{
+    position: relative;
+    left : 25%;
+    top: 10px;
+    margin-right: 40px;
+    height:50%;
+    color: $white;
+}
+
+.INbuttons:hover{
+    color: $light-color;
+}
+
+.search {
+       grid-area: 2 / 3 / 3 / 4;
+       display: flex;
+
+       input{
+           width: 50%;
+       }
+
+       i{
+           position: relative;
+           left: 3%;
+           bottom: 2px
+       }
+}
+
+.INsearch{
+    position: relative;
+    left: 35%;
+    top: 10px;
+    height: 50%;
+    margin-right: 10px;
+    padding: 5px 5px;
+    border-radius: 50px;
+    border-style: hidden;
+}
+
+.logo {
+       grid-area: 1 / 2 / 3 / 3;
+       text-align: center;
+       
+       img{
+           width: 110px;
+       }
+}
+
+.cover{
+    width: 100%;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../IMG/image_cover.jpg);
+    background-repeat: no-repeat;
+    background-position: center, center;
+    background-size: 100% 100%;
+
+    form{
+        display:flex;
+        flex-direction: column;
+        //justify-content: center;
+        align-items: center;
+        //align-content: center;
+        gap: 30px;
+        margin-top: 8%;
+
+        .userbar{
+            width: 400px;
+            height: 50px;
+            padding: 0px 15px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+        }
+
+        #log_botton{
+            width: 90px;
+            height: 40px;
+            font-size: 15px;
+            background-color: $light-color;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+}
+
+footer{
+    min-height: 100px;
+    background-color: $light-color;
+    background-image: url(../IMG/arabisk.png);
+    background-position: center, center;
+    background-size: 100% auto;
+}
+

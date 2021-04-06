@@ -1,0 +1,72 @@
+.popup{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFFDDD;
+    //z-index: 2;
+    //filter: blur(8px);
+}
+form{
+    width:35vw;
+    display: flex;
+    flex-direction: column;
+    margin: 5vh auto 0 auto;
+    padding: 10vh;
+    gap: 10px;
+    //z-index: 1;
+    background-color: grey;
+
+    label {
+        font-family: "Segoe UI";
+        font-size: 22px;
+        font-weight: normal;
+    }
+
+    input[type="text"]{
+        width: 30vw;
+        height: 30px;
+        padding-left: 10px;
+    }
+
+    textarea{
+        width: 30vw;
+        padding: 10px 0 10px 10px;
+    }
+
+    input[type="number"]{
+        width: 30vw;
+        height: 30px;
+        padding-left: 10px;
+    }
+
+    input[type="file"]{
+        width: 30vw;
+    }
+
+    input[type="submit"]{
+        width: 10vw;
+        height: 30px;
+        border-radius: 5px;
+        position: relative;
+        left: 20vw;
+    }
+
+    .close{
+        color: white;
+        background-color: black;
+        width: 30px;
+        height: 30px;
+        outline: none;
+        border: none;
+        border-radius: 50px;
+        position: absolute;
+        left: 65vw;
+        top: 8vh;
+
+        &:hover{
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+        }
+    }
+}

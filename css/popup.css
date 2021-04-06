@@ -1,0 +1,52 @@
+.popup {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: #FFFDDD; }
+
+form {
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+  margin: 5vh auto 0 auto;
+  padding: 10vh;
+  gap: 10px;
+  background-color: grey; }
+  form label {
+    font-family: "Segoe UI";
+    font-size: 22px;
+    font-weight: normal; }
+  form input[type="text"] {
+    width: 30vw;
+    height: 30px;
+    padding-left: 10px; }
+  form textarea {
+    width: 30vw;
+    padding: 10px 0 10px 10px; }
+  form input[type="number"] {
+    width: 30vw;
+    height: 30px;
+    padding-left: 10px; }
+  form input[type="file"] {
+    width: 30vw; }
+  form input[type="submit"] {
+    width: 10vw;
+    height: 30px;
+    border-radius: 5px;
+    position: relative;
+    left: 20vw; }
+  form .close {
+    color: white;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    position: absolute;
+    left: 65vw;
+    top: 8vh; }
+    form .close:hover {
+      background-color: white;
+      color: black;
+      border: 1px solid black; }

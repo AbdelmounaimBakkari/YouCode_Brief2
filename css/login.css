@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.navbar {
+  background: linear-gradient(180deg, #f1bf88 65%, #393848 60%);
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-rows: 3fr 2fr;
+  gap: 10px 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
+
+.num {
+  grid-area: 1 / 1 / 2 / 2;
+  display: flex; }
+
+.INnum {
+  position: relative;
+  left: 35%;
+  top: 5px;
+  height: 50%;
+  margin-right: 20px;
+  color: #fff; }
+
+.media_lang {
+  grid-area: 1 / 3 / 2 / 4;
+  display: flex; }
+
+.media {
+  display: flex;
+  justify-content: space-evenly; }
+
+.lang {
+  background-color: #393848; }
+
+.INmedia_lang {
+  position: relative;
+  left: 10%;
+  top: 5px;
+  height: 35%;
+  width: 150px;
+  color: #fff;
+  border-radius: 50px; }
+
+.buttons {
+  grid-area: 2 / 1 / 3 / 2;
+  display: flex;
+  list-style-type: unset; }
+
+.INbuttons {
+  position: relative;
+  left: 25%;
+  top: 10px;
+  margin-right: 40px;
+  height: 50%;
+  color: #fff; }
+
+.INbuttons:hover {
+  color: #f1bf88; }
+
+.search {
+  grid-area: 2 / 3 / 3 / 4;
+  display: flex; }
+  .search input {
+    width: 50%; }
+  .search i {
+    position: relative;
+    left: 3%;
+    bottom: 2px; }
+
+.INsearch {
+  position: relative;
+  left: 35%;
+  top: 10px;
+  height: 50%;
+  margin-right: 10px;
+  padding: 5px 5px;
+  border-radius: 50px;
+  border-style: hidden; }
+
+.logo {
+  grid-area: 1 / 2 / 3 / 3;
+  text-align: center; }
+  .logo img {
+    width: 110px; }
+
+.cover {
+  width: 100%;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../IMG/image_cover.jpg);
+  background-repeat: no-repeat;
+  background-position: center, center;
+  background-size: 100% 100%; }
+  .cover form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 8%; }
+    .cover form .userbar {
+      width: 400px;
+      height: 50px;
+      padding: 0px 15px;
+      border-radius: 5px;
+      border: none;
+      outline: none; }
+    .cover form #log_botton {
+      width: 90px;
+      height: 40px;
+      font-size: 15px;
+      background-color: #f1bf88;
+      font-weight: bold;
+      cursor: pointer; }
+
+footer {
+  min-height: 100px;
+  background-color: #f1bf88;
+  background-image: url(../IMG/arabisk.png);
+  background-position: center, center;
+  background-size: 100% auto; }
